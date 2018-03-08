@@ -1,0 +1,31 @@
+<!--<div>
+  <iframe width="350" height="430" src="https://console.dialogflow.com/api-client/demo/embedded/1ccb9168-32df-4138-b163-d2705a8e8bd6"></iframe>
+</div>-->
+<h3>Create Contacto</h3>
+<div [hidden]="submitted" style="width: 300px;">
+	<form (ngSubmit)="onSubmit()">
+		<div class="form-group">
+			<label for="comentarios">comentarios</label> <input type="text"
+				class="form-control" id="comentarios" required [(ngModel)]="contacto.comentarios"
+				name="comentarios">
+		</div>
+ 
+		<div class="form-group">
+			<label for="fecha">fecha</label> <input type="date"
+				class="form-control" id="fecha" required [(ngModel)]="contacto.fecha"
+				name="fecha">
+    </div>
+    <div class="form-group">
+			<label for="mail">mail</label> <input type="email"
+				class="form-control" id="mail" required [(ngModel)]="contacto.mail"
+				name="mail">
+		</div>
+ 
+		<button type="submit" class="btn btn-success">Submit</button>
+	</form>
+</div>
+ 
+<div [hidden]="!submitted">
+	<h4>You submitted successfully!</h4>
+	<button class="btn btn-success" (click)="newCustomer()">Add</button>
+</div>

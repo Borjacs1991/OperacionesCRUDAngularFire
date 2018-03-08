@@ -1,0 +1,47 @@
+
+<div class="container" id="header">
+    <div class="col-md-2" id="logo">
+      <img src="/assets/logo.png" width="100%">
+    </div>
+    <div class="col-md-6" id="imagen">
+      <img src="/assets/bienvenida.png" width="100%">
+    </div>
+    <div class="col-md-4" id="buscador">
+      <nav class="navbar navbar-light bg-light">
+        <form class="form-inline">
+          <input class="form-control mr-sm-2" type="search" placeholder="Buscar" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Buscar</button>
+        </form>
+      </nav>
+    </div>
+  </div>
+
+  <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+      <div class="col-md-3">
+          <a class="btn btn-danger btn-lg btn-block" routerLink="/home">Home</a>
+      </div>
+      <div class="col-md-3">
+          <a class="btn btn-danger btn-lg btn-block" routerLink="/blogs">Blog</a>
+      </div>
+      <div class="col-md-3">
+          <a class="btn btn-danger btn-lg btn-block" routerLink="/servicios">Servicios</a>
+      </div>
+      <div class="col-md-3">
+          <a class="btn btn-danger btn-lg btn-block" routerLink="/contactos">Contacto</a>
+      </div>
+    </div>
+  </nav>
+<br>
+<router-outlet></router-outlet>
+<br>
+<div class="container" id="footer">
+    <div class="col-md-12">
+      <div id="enlace">
+          <a href="/assets/cookies.pdf" id="enlace">&#169; Politica de Cookies</a>
+      </div>
+    </div>
+</div>

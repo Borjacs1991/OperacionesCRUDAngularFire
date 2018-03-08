@@ -1,0 +1,13 @@
+<div class="container">
+  <h1>Temas</h1>
+
+    <ul>
+      <div *ngFor="let blogs of blogObservable | async">
+        <ngb-alert type="info" [dismissible]="false">
+            <h3>{{ blogs.titulo }},    {{ blogs.fecha }}</h3>
+            <p>{{ blogs.descripcion }}</p>
+            <img src="{{ blogs.foto }}">
+          </ngb-alert> 
+      </div>
+    </ul> 
+</div>

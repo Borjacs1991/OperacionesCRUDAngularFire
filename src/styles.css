@@ -1,0 +1,22 @@
+/* You can add global styles to this file, and also import other style files */
+@import "~bootstrap/dist/css/bootstrap.css";
+.fixed-top {
+    position: inherit;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+    clear: both;
+}
+#logo{
+    float: left;
+}
+#imagen{
+    float: left;
+}
+#buscador{
+    float: right;
+}
+#footer{
+    clear: both;
+}
